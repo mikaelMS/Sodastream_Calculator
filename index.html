@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Boostrap_Rechner</title>
+</head>
+
+<body>
+  <div class="container">
+    <p>TODO: Disable Button wenn nicht alles ausgefüllt wurde</>
+    <h1>Sodastream Rechner</h1>
+
+    <form>
+      <div class="form-group row">
+        <label for="choice_sodastream" class="col-sm-8 col-form-label" name="choice_sodastream" id="choice_sodastream">Wie stark gesprudelt soll ihr Wasser sein?</label>
+        <div class="col-sm-4">
+          <select class="form-control" name="choice_gas_power" id="choice_gas_power">
+            <option value="noOption" disabled selected hidden>Bitte auswählen</option>
+            <option value="gas_weak">Schwach</option>
+            <option value="gas_medium">Medium</option>
+            <option value="gas_strong">Stark</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-8 col-form-label">Welchen Wassersprudler möchten Sie sich anschaffen?</label>
+        <div class="col-sm-4">
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option value="noOption" disabled selected hidden>Bitte auswählen</option>
+            <option value="SodaStreamPower">SodaStream Power - 150€</option>
+            <option value="SodaStreamCrystal">SodaStream Crystal - 115€</option>noOption
+            <option value="SodaStreamSource">SodaStream Source - 100€</option>
+            <option value="Levivo">Levivo Wassersprudler - 70€</option>
+            <option value="SodaStreamEasy">SodaStream Easy - 60€</option>
+            <option value="Rosenstein">Rosenstein & Söhne Wassersprudler WS-110 Soda - 60€</option>
+            <option value="SodaStreamCool">SodaStream Cool - 55€</option>
+            <option value="SodaTrendClassic">Soda Trend Classic - 50€</option>
+            <option value="Aquabar">Aquabar - 35€</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-8 col-form-label">Wasserverbrauch Ihres Haushalts pro Tag [Liter]:</label>
+        <div class="col-sm-4">
+          <input type="number" class="form-control" name="liter_per_day" placeholder="Liter auswählen" min="0.5" step="0.5" onkeydown="return false">
+        </div>
+      </div>
+
+      <div class="form-group row float-right">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Berechnen</button>
+        </div>
+      </div>
+    </form>
+
+
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
