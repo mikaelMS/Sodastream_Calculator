@@ -47,19 +47,46 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-8 col-form-label">Wasserverbrauch Ihres Haushalts pro Tag [Liter]:</label>
+        <label for="inputPassword3" class="col-sm-8 col-form-label">Wasserverbrauch Ihres Haushalts pro Tag [in Liter]:</label>
         <div class="col-sm-4">
           <input type="number" class="form-control" name="liter_per_day" placeholder="Liter auswählen" min="0.5" step="0.5" onkeydown="return false">
         </div>
       </div>
 
-      <div class="form-group row float-right">
-        <div class="col-sm-10">
+      <div class="form-group row">
+        <div class="col-sm-8"></div>
+        <div class="col-sm-4">
           <button type="submit" class="btn btn-primary">Berechnen</button>
         </div>
       </div>
     </form>
 
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Art</th>
+      <th scope="col">Kosten/Liter</th>
+      <th scope="col">Kosten/Monat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Selbst gesprudeltes Wasser</th>
+      <td>TODO</td>
+      <td>TODO</td>
+    </tr>
+    <tr>
+      <th scope="row">Sprudelwasser Discounter</th>
+      <td>Wert fest</td>
+      <td>Wert fest</td>
+    </tr>
+    <tr>
+      <th scope="row">Markenwasser</th>
+      <td>Wert fest</td>
+      <td>Wert fest</td>
+    </tr>
+  </tbody>
+</table>
 
 
   </div>
