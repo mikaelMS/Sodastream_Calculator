@@ -60,8 +60,7 @@ function getInputValues() {
     calculateLiterPrice(getGasCoverage(gasChoice), getSStreamerPrice(sodaChoice), literChoice);
     calculateMonthPrice(getGasCoverage(gasChoice), getSStreamerPrice(sodaChoice), literChoice);
   } else {
-    //displayDisclaimer(); //TODO
-    alert("Bitte alle Felder auswählen");
+    
   }
 }
 
