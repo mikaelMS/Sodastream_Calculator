@@ -24,6 +24,10 @@ let Calculator = {
   // Price cylinder in euros
   CYCLINDER_PRICE: 9,
 
+  // Results
+  LiterResult: 0,
+  MonthResult: 0,
+
   startProcess: function() {
     let gasSelect = document.getElementById("choice_gas_power");
     let gasChoice = gasSelect.options[gasSelect.selectedIndex].value;
@@ -57,7 +61,8 @@ let Calculator = {
     let rounded_result = Number(roundedString);
 
     // document.getElementById("calc_result_liter").value = rounded_result;
-    alert("Preis pro Liter: " + rounded_result);
+    Calculator.LiterResult = rounded_result;
+    // alert("Preis pro Liter: " + rounded_result);
   },
 
   calculateMonthPrice: function(gasCoverage, sodaPrice, literAmount) {
@@ -78,7 +83,8 @@ let Calculator = {
     let num = Number(result);
     let roundedString = num.toFixed(2);
     let rounded_result = Number(roundedString);
-    alert("Preis pro Monat: " + rounded_result);
+    Calculator.MonthResult = rounded_result;
+    // alert("Preis pro Monat: " + rounded_result);
     // document.getElementById("calc_result_month").value = rounded_result;
   },
 
@@ -115,7 +121,7 @@ let Calculator = {
         break;
       default:
         console.log("sodaChoice error");
-        alert("Wähle eine Sprudelstärke aus");
+        // alert("Wähle eine Sprudelstärke aus");
     }
     return sodaPrice;
   },
@@ -135,7 +141,7 @@ let Calculator = {
         break;
       default:
         console.log("gasChoice error");
-        alert("Wähle ein Sodastream aus");
+        // alert("Wähle ein Sodastream aus");
     }
     return gasCoverage;
   }
@@ -147,6 +153,8 @@ let inputs = new Array(false, false, false);
 $("#btn_result").click(function(e) {
   e.preventDefault();
   Calculator.startProcess();
+  document.getElementById('result_liter').innerHTML = Calculator.LiterResult + "€";
+  document.getElementById('result_month').innerHTML = Calculator.MonthResult + "€";
 });
 
 $("#choice_gas_power").on('change', function() {
