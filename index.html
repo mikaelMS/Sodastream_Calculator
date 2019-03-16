@@ -12,6 +12,14 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
   <title>Boostrap_Rechner</title>
   <style>
+    .hidden {
+      display: none;
+    }
+
+    .container {
+      padding-top: 50px;
+    }
+
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
     opacity: 1;
@@ -22,8 +30,8 @@
 <body>
   <!-- xs md md ld -->
   <div class="container">
-    <p>TODO: Responsive width Table</p>
-    <p>TODO: Animate Table</p>
+    <!-- TODO: Responsive width Table -->
+    <!-- TODO: Animate Table -->
 
     <p class="font-weight-bold">Sodastream Rechner</p>
     <form>
@@ -70,7 +78,7 @@
       </div>
     </form>
 
-    <table class="table" id="results_table">
+    <table class="table hidden" id="results_table">
       <thead class="thead-light">
         <tr>
           <th scope="col">Art</th>

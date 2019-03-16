@@ -155,6 +155,7 @@ $("#btn_result").click(function(e) {
   Calculator.startProcess();
   document.getElementById('result_liter').innerHTML = Calculator.LiterResult + "€";
   document.getElementById('result_month').innerHTML = Calculator.MonthResult + "€";
+  $("#results_table").removeClass("hidden");
 });
 
 $("#choice_gas_power").on('change', function() {
