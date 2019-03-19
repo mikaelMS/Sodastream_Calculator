@@ -60,9 +60,7 @@ let Calculator = {
     let roundedString = num.toFixed(2);
     let rounded_result = Number(roundedString);
 
-    // document.getElementById("calc_result_liter").value = rounded_result;
     Calculator.LiterResult = rounded_result;
-    // alert("Preis pro Liter: " + rounded_result);
   },
 
   calculateMonthPrice: function(gasCoverage, sodaPrice, literAmount) {
@@ -84,8 +82,6 @@ let Calculator = {
     let roundedString = num.toFixed(2);
     let rounded_result = Number(roundedString);
     Calculator.MonthResult = rounded_result;
-    // alert("Preis pro Monat: " + rounded_result);
-    // document.getElementById("calc_result_month").value = rounded_result;
   },
 
   getSStreamerPrice: function(sodaChoice) {
