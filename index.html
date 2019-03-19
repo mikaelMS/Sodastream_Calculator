@@ -9,10 +9,18 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
   <title>Boostrap_Rechner</title>
   <style>
-    .hidden {
+    .hide {
+      display: none;
+    }
+
+    /* Loading all rows after another (Currently in Development)*/
+    /* #results_table tr:nth-child(n) {
+      display: none;
+    } */
+
+    #results_table tr {
       display: none;
     }
 
@@ -20,6 +28,7 @@
       padding-top: 50px;
     }
 
+    /* Needed for constant display of Liter spinners */
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
     opacity: 1;
@@ -28,11 +37,7 @@
 </head>
 
 <body>
-  <!-- xs md md ld -->
   <div class="container">
-    <!-- TODO: Responsive width Table -->
-    <!-- TODO: Animate Table -->
-
     <p class="font-weight-bold">Sodastream Rechner</p>
     <form>
       <div class="form-group row">
@@ -78,7 +83,7 @@
       </div>
     </form>
 
-    <table class="table hidden" id="results_table">
+    <table class="table" id="results_table">
       <thead class="thead-light">
         <tr>
           <th scope="col">Art</th>

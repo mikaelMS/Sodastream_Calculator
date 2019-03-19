@@ -155,8 +155,16 @@ $("#btn_result").click(function(e) {
   Calculator.startProcess();
   document.getElementById('result_liter').innerHTML = Calculator.LiterResult + "€";
   document.getElementById('result_month').innerHTML = Calculator.MonthResult + "€";
-  $("#results_table").removeClass("hidden");
+  $("#results_table tr").fadeIn("slow");
 });
+
+//  Loading all rows after another (Currently in Development)
+// var animateTable = function() {
+//   var i = 1;
+//   $("#results_table tr:nth-child("+i+")").fadeIn("slow");
+//   i++;
+//   setTimeout();
+// }
 
 $("#choice_gas_power").on('change', function() {
   inputs[0] = true;
