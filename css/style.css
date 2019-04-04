@@ -1,0 +1,71 @@
+#btn_result {
+  background-color: #E76016;
+  border-color: #E76016;
+  width: 100%;
+}
+
+#title_calculator {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wassersprudler_rechner .row {
+  margin-bottom: 12px;
+}
+
+.table_header {
+  background-color: #8BC34A !important;
+  color: #fff !important;
+  border-bottom: #8BC34A !important;
+}
+
+/* MEDIA QURIES */
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .container {
+    width: 753px;
+    padding: 23px 23px 3px 23px;
+  }
+
+  #results_table {
+    margin-top: 25px;
+  }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1283px
+*/
+@media (min-width: 1025px) and (max-width: 1283px) {
+  .container {
+    width: 753px;
+    padding: 23px 23px 3px 23px;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 763px to 1024px
+*/
+@media (min-width: 763px) and (max-width: 1024px) {
+  .container {
+    padding: 23px 23px 3px 23px;
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 323px to 479px
+*/
+@media (min-width: 323px) and (max-width: 483px) {
+  .container {
+    padding-top: 23px;
+  }
+}

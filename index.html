@@ -8,6 +8,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Boostrap_Rechner</title>
   <style>
@@ -24,10 +26,6 @@
       display: none;
     }
 
-    .container {
-      padding-top: 50px;
-    }
-
     /* Needed for constant display of Liter spinners */
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {
@@ -37,8 +35,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <p class="font-weight-bold">Sodastream Rechner</p>
+  <div id="wassersprudler_rechner" class="container shadow">
+    <p id="title_calculator">Wassersprudler Rechner</p>
     <form>
       <div class="form-group row">
         <label class="col-xs-12 col-md-8 col-form-label">Wie stark gesprudelt soll ihr Wasser sein?</label>
@@ -61,7 +59,7 @@
             <option value="SodaStreamSource">SodaStream Source - 100€</option>
             <option value="Levivo">Levivo Wassersprudler - 70€</option>
             <option value="SodaStreamEasy">SodaStream Easy - 60€</option>
-            <option value="Rosenstein">Rosenstein & Söhne Wassersprudler WS-110 Soda - 60€</option>
+            <!-- <option value="Rosenstein">Rosenstein & Söhne Wassersprudler WS-110 Soda - 60€</option> -->
             <option value="SodaStreamCool">SodaStream Cool - 55€</option>
             <option value="SodaTrendClassic">Soda Trend Classic - 50€</option>
             <option value="Aquabar">Aquabar - 35€</option>
@@ -78,37 +76,38 @@
       <div class="form-group row">
         <div class="col-md-8"></div>
         <div class="col-xs-12 col-md-4">
-          <button id="btn_result" class="btn btn-primary" disabled>Berechnen</button>
+          <button id="btn_result" class="btn btn-primary shadow-sm" disabled>Berechnen</button>
         </div>
       </div>
     </form>
 
-    <table class="table" id="results_table">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">Art</th>
-          <th scope="col">Kosten/Liter</th>
-          <th scope="col">Kosten/Monat</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Selbst gesprudeltes Wasser</th>
-          <td id="result_liter"></td>
-          <td id="result_month"></td>
-        </tr>
-        <tr>
-          <th scope="row">Sprudelwasser Discounter</th>
-          <td>Wert fest</td>
-          <td>Wert fest</td>
-        </tr>
-        <tr>
-          <th scope="row">Markenwasser</th>
-          <td>Wert fest</td>
-          <td>Wert fest</td>
-        </tr>
-      </tbody>
-    </table>
+      <table class="table" id="results_table">
+        <thead class="thead-light">
+          <tr>
+            <th class="table_header" scope="col">Art</th>
+            <th class="table_header" scope="col">Kosten/Liter</th>
+            <th class="table_header" scope="col">Kosten/Monat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Selbst gesprudeltes Wasser</th>
+            <td id="result_liter"></td>
+            <td id="result_month"></td>
+          </tr>
+          <tr>
+            <th scope="row">Sprudelwasser Discounter</th>
+            <td>Wert fest</td>
+            <td>Wert fest</td>
+          </tr>
+          <tr>
+            <th scope="row">Markenwasser</th>
+            <td>Wert fest</td>
+            <td>Wert fest</td>
+          </tr>
+        </tbody>
+      </table>
+
   </div>
 
   <!-- Optional JavaScript -->
