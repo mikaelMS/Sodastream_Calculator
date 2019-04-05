@@ -55,6 +55,10 @@ input[type=number]::-webkit-outer-spin-button {
   #formControlRange {
     display: none;
   }
+
+  #range-slider__value, #liter-label {
+    display: none;
+  }
 }
 
 /*
@@ -68,6 +72,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   #formControlRange {
+    display: none;
+  }
+
+  #range-slider__value, #liter-label {
     display: none;
   }
 }
@@ -84,9 +92,17 @@ input[type=number]::-webkit-outer-spin-button {
   #formControlRange {
     display: none;
   }
+
+  #range-slider__value, #liter-label {
+    display: none;
+  }
 }
 
 @media (min-width: 484px) and (max-width: 762px) {
+  #wassersprudler_rechner.container {
+    padding-top: 23px;
+  }
+
   #choice_liters {
     display: none;
   }
@@ -110,7 +126,7 @@ input[type=number]::-webkit-outer-spin-button {
   ##Device = Very small Smartphones Mobiles (iPhone5 SE, etc.) (Portrait)
   ##Screen = B/w 319px to 323px
 */
-@media (min-width: 319px) and (max-width: 323px) {
+@media (min-width: 290px) and (max-width: 323px) {
   #wassersprudler_rechner.container {
     padding-top: 23px;
   }
@@ -119,7 +135,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 6px;
   }
 
-  #results_table th.table_header{
+  #results_table th.table_header {
     padding: 8px;
   }
 

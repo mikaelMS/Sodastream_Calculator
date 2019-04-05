@@ -1,3 +1,19 @@
+// Range Slider
+var max = 20,
+    min = 0.5,
+    step = 0.5,
+    value = 6;
+    output = $('#range-slider__value').text(value.toFixed(1));
+    coolNumber = value;
+
+$("#formControlRange")
+    .attr({'max': max, 'min':min, 'step': step,'value': String(value)})
+    .on('input change', function() {
+
+        coolNumber = parseFloat(this.value);
+        output.text(coolNumber.toFixed(1));
+    });
+
 let Calculator = {
   // Price per liter water in euros
   WATER_PRICE: 0.002,
@@ -36,6 +52,9 @@ let Calculator = {
     let sodaChoice = sodastreamNumber.options[sodastreamNumber.selectedIndex].value;
 
     let literChoice = document.getElementById("choice_liters").value;
+    if(literChoice == 0) {
+      literChoice = coolNumber; //TODO: array down below on false, false, false
+    }
 
     Calculator.calculateLiterPrice(Calculator.getGasCoverage(gasChoice), Calculator.getSStreamerPrice(sodaChoice), literChoice);
     Calculator.calculateMonthPrice(Calculator.getGasCoverage(gasChoice), Calculator.getSStreamerPrice(sodaChoice), literChoice);
@@ -59,7 +78,6 @@ let Calculator = {
     let num = Number(result * 100);
     let roundedString = num.toFixed(2);
     let rounded_result = Number(roundedString);
-
     Calculator.LiterResult = rounded_result;
   },
 
@@ -144,13 +162,13 @@ let Calculator = {
 };
 
 // JQuery Event handling
-let inputs = new Array(false, false, false);
+let inputs = new Array(false, false, true);
 
 $("#btn_result").click(function(e) {
   e.preventDefault();
   Calculator.startProcess();
-  document.getElementById('result_liter').innerHTML = Calculator.LiterResult + "€";
-  document.getElementById('result_month').innerHTML = Calculator.MonthResult + "€";
+  document.getElementById('result_liter').innerHTML = Calculator.LiterResult + " " + "Cent";
+  document.getElementById('result_month').innerHTML = Calculator.MonthResult +"€";
   $("#results_table tr").fadeIn("slow");
 });
 
