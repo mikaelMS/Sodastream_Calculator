@@ -2,17 +2,9 @@
 var max = 20,
     min = 0.5,
     step = 0.5,
-    value = 6;
+    value = 0;
     output = $('#range-slider__value').text(value.toFixed(1));
     coolNumber = value;
-
-$("#formControlRange")
-    .attr({'max': max, 'min':min, 'step': step,'value': String(value)})
-    .on('input change', function() {
-
-        coolNumber = parseFloat(this.value);
-        output.text(coolNumber.toFixed(1));
-    });
 
 let Calculator = {
   // Price per liter water in euros
@@ -162,7 +154,7 @@ let Calculator = {
 };
 
 // JQuery Event handling
-let inputs = new Array(false, false, true);
+let inputs = new Array(false, false, false);
 
 $("#btn_result").click(function(e) {
   e.preventDefault();
@@ -191,9 +183,21 @@ $("#choice_sodastream").on('change', function() {
 });
 
 $("#choice_liters").on('change', function() {
-  inputs[2] = true;
-  enableButton();
+
 });
+
+$("#formControlRange")
+    .attr({'max': max, 'min':min, 'step': step,'value': String(value)})
+    .on('input change', function() {
+
+        coolNumber = parseFloat(this.value);
+        output.text(coolNumber.toFixed(1));
+
+        if(document.getElementById("formControlRange").value > 0) {
+          inputs[2] = true;
+          enableButton();
+        }
+    });
 
 function enableButton() {
   if (inputs[0] && inputs[1] && inputs[2]) {
