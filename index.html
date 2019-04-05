@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider_style.css">
 
   <title>Boostrap_Rechner</title>
 </head>
@@ -30,7 +31,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="inputPassword3" class="col-xs-12 col-md-8 col-form-label">Welchen Wassersprudler möchten Sie sich anschaffen?</label>
+        <label class="col-xs-12 col-md-8 col-form-label">Welchen Wassersprudler möchten Sie sich anschaffen?</label>
         <div class="col-xs-12 col-md-4">
           <select class="form-control" name="choice_sodastream" id="choice_sodastream">
             <option value="noOption" disabled selected hidden>Bitte auswählen</option>
@@ -47,11 +48,15 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="inputPassword3" class="col-xs-12 col-md-8 col-form-label">Wasserverbrauch Ihres Haushalts pro Tag [in Liter]:</label>
+        <label class="col-xs-12 col-md-8 col-form-label">Wasserverbrauch Ihres Haushalts pro Tag [in Liter]:</label>
         <div class="col-xs-12 col-md-4">
           <input id="choice_liters" type="number" class="form-control liter_scale" name="liter_per_day" placeholder="Liter auswählen" min="0.5" step="0.5" onkeydown="return false">
         </div>
+
+       <div class="range-slider col-xs-12 col-md-4 col-form-label">
+        <input id="formControlRange" class="range-slider__range form-control-range" type="range" value="6" min="0.5" max="20" step="0.5">
       </div>
+    </div>
 
       <div class="form-group row">
         <div class="col-md-8"></div>
