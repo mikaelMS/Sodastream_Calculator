@@ -1,3 +1,17 @@
+.hide {
+  display: none;
+}
+
+#results_table tr {
+  display: none;
+}
+
+/* Needed for constant display of Liter spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
 #btn_result {
   background-color: #E76016;
   border-color: #E76016;
@@ -9,7 +23,7 @@
   font-size: 22px;
 }
 
-.container {
+#wassersprudler_rechner.container {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -23,20 +37,21 @@
   border-bottom: #8BC34A !important;
 }
 
+#results_table {
+  margin-top: 25px;
+}
+
 /* MEDIA QURIES */
 /*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 @media (min-width: 1281px) {
-  .container {
+  #wassersprudler_rechner.container {
     width: 753px;
     padding: 23px 23px 3px 23px;
   }
 
-  #results_table {
-    margin-top: 25px;
-  }
 }
 
 /*
@@ -44,10 +59,11 @@
   ##Screen = B/w 1025px to 1283px
 */
 @media (min-width: 1025px) and (max-width: 1283px) {
-  .container {
+  #wassersprudler_rechner.container {
     width: 753px;
     padding: 23px 23px 3px 23px;
   }
+
 }
 
 /*
@@ -55,9 +71,10 @@
   ##Screen = B/w 763px to 1024px
 */
 @media (min-width: 763px) and (max-width: 1024px) {
-  .container {
+  #wassersprudler_rechner.container {
     padding: 23px 23px 3px 23px;
   }
+
 }
 
 /*
@@ -65,7 +82,30 @@
   ##Screen = B/w 323px to 479px
 */
 @media (min-width: 323px) and (max-width: 483px) {
-  .container {
+  #wassersprudler_rechner.container {
     padding-top: 23px;
+  }
+}
+
+/*
+  ##Device = Very small Smartphones Mobiles (iPhone5 SE, etc.) (Portrait)
+  ##Screen = B/w 319px to 323px
+*/
+@media (min-width: 319px) and (max-width: 323px) {
+  #wassersprudler_rechner.container {
+    padding-top: 23px;
+  }
+
+  #results_table th {
+    padding: 6px;
+  }
+
+  #results_table th.table_header{
+    padding: 8px;
+  }
+
+  #results_table {
+    font-size: 12.8px;
+    /* font-size: 0.71rem; */
   }
 }

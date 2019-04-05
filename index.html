@@ -12,26 +12,6 @@
   <link rel="stylesheet" href="css/style.css">
 
   <title>Boostrap_Rechner</title>
-  <style>
-    .hide {
-      display: none;
-    }
-
-    /* Loading all rows after another (Currently in Development)*/
-    /* #results_table tr:nth-child(n) {
-      display: none;
-    } */
-
-    #results_table tr {
-      display: none;
-    }
-
-    /* Needed for constant display of Liter spinners */
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button {
-    opacity: 1;
-    }
-  </style>
 </head>
 
 <body>
@@ -76,13 +56,13 @@
       <div class="form-group row">
         <div class="col-md-8"></div>
         <div class="col-xs-12 col-md-4">
-          <button id="btn_result" class="btn btn-primary shadow-sm" disabled>Berechnen</button>
+          <button id="btn_result" class="btn btn-primary shadow" disabled>Berechnen</button>
         </div>
       </div>
     </form>
 
       <table class="table" id="results_table">
-        <thead class="thead-light">
+        <thead class="thead-light shadow-sm">
           <tr>
             <th class="table_header" scope="col">Art</th>
             <th class="table_header" scope="col">Kosten/Liter</th>
