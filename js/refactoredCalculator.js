@@ -69,8 +69,8 @@ let Calculator = {
     // Converting to 2 digts after comma and * 100 for cent
     let num = Number(result * 100);
     let roundedString = num.toFixed(2);
-    let rounded_result = Number(roundedString);
-    Calculator.LiterResult = rounded_result;
+    let rounded_result = String(roundedString);
+    Calculator.LiterResult = rounded_result.replace(".", ",");
   },
 
   calculateMonthPrice: function(gasCoverage, sodaPrice, literAmount) {
@@ -90,8 +90,8 @@ let Calculator = {
     // Converting to 2 digts after comma and * 100 for cent
     let num = Number(result);
     let roundedString = num.toFixed(2);
-    let rounded_result = Number(roundedString);
-    Calculator.MonthResult = rounded_result;
+    let rounded_result = String(roundedString);
+    Calculator.MonthResult = rounded_result.replace(".", ",");
   },
 
   getSStreamerPrice: function(sodaChoice) {
@@ -183,7 +183,8 @@ $("#choice_sodastream").on('change', function() {
 });
 
 $("#choice_liters").on('change', function() {
-
+  inputs[2] = true;
+  enableButton();
 });
 
 $("#formControlRange")
