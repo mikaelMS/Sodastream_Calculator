@@ -17,7 +17,9 @@
 
 <body>
   <div id="wassersprudler_rechner" class="container shadow">
-    <p id="title_calculator">Wassersprudler Rechner</p>
+    <div id="title_calculator">
+      Wassersprudler Rechner
+    </div>
     <form>
       <div class="form-group row">
         <label class="col-xs-12 col-md-8 col-form-label">Wie stark gesprudelt soll ihr Wasser sein?</label>
@@ -54,7 +56,7 @@
         </div>
 
        <div class="range-slider col-xs-12 col-md-4 col-form-label">
-        <input id="formControlRange" class="range-slider__range form-control-range" type="range" value="0" min="0.5" max="20" step="0.5">
+        <input id="formControlRange" class="range-slider__range form-control-range" type="range" value="0" min="0.5" max="40" step="0.5">
       </div>
     </div>
 
@@ -82,13 +84,13 @@
           </tr>
           <tr>
             <th scope="row">Sprudelwasser Discounter</th>
-            <td>Wert fest</td>
-            <td>Wert fest</td>
+            <td>13,00 Cent</td>
+            <td>3,90€</td>
           </tr>
           <tr>
             <th scope="row">Markenwasser</th>
-            <td>Wert fest</td>
-            <td>Wert fest</td>
+            <td>60,00 Cent</td>
+            <td>18,00€</td>
           </tr>
         </tbody>
       </table>
@@ -97,7 +99,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" integrity=""></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity=""></script>
   <script src="js/refactoredCalculator.js" integrity=""></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjmdVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

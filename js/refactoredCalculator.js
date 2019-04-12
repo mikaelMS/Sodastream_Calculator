@@ -1,5 +1,5 @@
 // Range Slider
-var max = 20,
+var max = 40,
     min = 0.5,
     step = 0.5,
     value = 0;
@@ -43,9 +43,13 @@ let Calculator = {
     let sodastreamNumber = document.getElementById("choice_sodastream");
     let sodaChoice = sodastreamNumber.options[sodastreamNumber.selectedIndex].value;
 
-    let literChoice = document.getElementById("choice_liters").value;
-    if(literChoice == 0) {
-      literChoice = coolNumber; //TODO: array down below on false, false, false
+    var literChoice;
+
+    if($(window).width() > 762){
+      literChoice = document.getElementById("choice_liters").value;
+      console.log(literChoice);
+    } else {
+        literChoice = coolNumber;
     }
 
     Calculator.calculateLiterPrice(Calculator.getGasCoverage(gasChoice), Calculator.getSStreamerPrice(sodaChoice), literChoice);
@@ -69,8 +73,8 @@ let Calculator = {
     // Converting to 2 digts after comma and * 100 for cent
     let num = Number(result * 100);
     let roundedString = num.toFixed(2);
-    let rounded_result = Number(roundedString);
-    Calculator.LiterResult = rounded_result;
+    let rounded_result = String(roundedString);
+    Calculator.LiterResult = rounded_result.replace(".", ",");
   },
 
   calculateMonthPrice: function(gasCoverage, sodaPrice, literAmount) {
@@ -90,8 +94,8 @@ let Calculator = {
     // Converting to 2 digts after comma and * 100 for cent
     let num = Number(result);
     let roundedString = num.toFixed(2);
-    let rounded_result = Number(roundedString);
-    Calculator.MonthResult = rounded_result;
+    let rounded_result = String(roundedString);
+    Calculator.MonthResult = rounded_result.replace(".", ",");
   },
 
   getSStreamerPrice: function(sodaChoice) {
@@ -183,7 +187,8 @@ $("#choice_sodastream").on('change', function() {
 });
 
 $("#choice_liters").on('change', function() {
-
+  inputs[2] = true;
+  enableButton();
 });
 
 $("#formControlRange")
