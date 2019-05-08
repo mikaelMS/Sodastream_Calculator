@@ -2,19 +2,6 @@
   display: none;
 }
 
-#rechner-tag {
-  position: absolute;
-left: 50%;
-margin-left: -57.5px;
-margin-top: -40px;
-padding-top: 3px;
-height: 33px;
-width: 100px;
-border-radius: 22px;
-background: #cdcdcd;
-font-size: 16px
-}
-
 #results_table tr {
   display: none;
 }
@@ -34,7 +21,6 @@ input[type=number]::-webkit-outer-spin-button {
 #title_calculator {
   font-weight: 600;
   font-size: 22px;
-  margin-bottom: 8px;
 }
 
 #wassersprudler_rechner.container {
@@ -55,10 +41,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 25px;
 }
 
-.question-label {
-  font-weight: 400;
-}
-
 /* MEDIA QURIES */
 /*
   ##Device = Desktops
@@ -74,7 +56,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
   }
 
-  #range-slider__value, #liter-label, #double-point {
+  #range-slider__value, #liter-label {
     display: none;
   }
 }
@@ -93,7 +75,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
   }
 
-  #range-slider__value, #liter-label, #double-point {
+  #range-slider__value, #liter-label {
     display: none;
   }
 }
@@ -111,7 +93,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
   }
 
-  #range-slider__value, #liter-label, #double-point {
+  #range-slider__value, #liter-label {
     display: none;
   }
 }
@@ -121,7 +103,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 23px;
   }
 
-  #choice_liters, #in-liter {
+  #choice_liters {
     display: none;
   }
 }
@@ -135,13 +117,8 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 23px;
   }
 
-  #choice_liters, #in-liter {
+  #choice_liters {
     display: none;
-  }
-
-  #results_table {
-    font-size: 12.0px;
-    /* font-size: 0.71rem; */
   }
 }
 
@@ -167,33 +144,7 @@ input[type=number]::-webkit-outer-spin-button {
     /* font-size: 0.71rem; */
   }
 
-  #choice_liters, #in-liter {
-    display: none;
-  }
-
-/*
-  ##Device = Very small Smartphones Mobiles (iPhone5 SE, etc.) (Portrait)
-  ##Screen = B/w 319px to 323px
-*/
-@media (min-width: 100px) and (max-width: 322px) {
-  #wassersprudler_rechner.container {
-    padding-top: 23px;
-  }
-
-  /* #results_table th {
-    padding: 6px;
-  }
-
-  #results_table th.table_header {
-    padding: 8px;
-  } */
-
-  #results_table {
-    font-size: 11px;
-    /* font-size: 0.71rem; */
-  }
-
-  #choice_liters, #in-liter {
+  #choice_liters {
     display: none;
   }
 }

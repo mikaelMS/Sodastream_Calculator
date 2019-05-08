@@ -16,15 +16,13 @@
 </head>
 
 <body>
-  <div style="margin-top: 80px"></div>
   <div id="wassersprudler_rechner" class="container shadow">
-    <div id="rechner-tag" class="text-center">Rechner</div>
     <div id="title_calculator">
       Wassersprudler Rechner
     </div>
     <form>
       <div class="form-group row">
-        <label class="question-label col-xs-12 col-md-8 col-form-label">Wie stark gesprudelt soll ihr Wasser sein?</label>
+        <label class="col-xs-12 col-md-8 col-form-label">Wie stark gesprudelt soll ihr Wasser sein?</label>
         <div class="col-xs-12 col-md-4">
           <select class="form-control" name="choice_gas_power" id="choice_gas_power">
             <option value="noOption" disabled selected hidden>Bitte auswählen</option>
@@ -35,7 +33,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <label class="question-label col-xs-12 col-md-8 col-form-label">Welchen Wassersprudler möchten Sie sich anschaffen?</label>
+        <label class="col-xs-12 col-md-8 col-form-label">Welchen Wassersprudler möchten Sie sich anschaffen?</label>
         <div class="col-xs-12 col-md-4">
           <select class="form-control" name="choice_sodastream" id="choice_sodastream">
             <option value="noOption" disabled selected hidden>Bitte auswählen</option>
@@ -52,7 +50,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <label class="question-label col-xs-12 col-md-8 col-form-label">Wasserverbrauch Ihres Haushalts pro Tag<span id="double-point">:</span><span id="in-liter"> (in Liter):</span> <br> <span id="range-slider__value" class="font-weight-bold "></span><span id="liter-label"> Liter</span></label>
+        <label class="col-xs-12 col-md-8 col-form-label">Wasserverbrauch Ihres Haushalts pro Tag (in Liter): <br><span id="range-slider__value" class="font-weight-bold "></span><span id="liter-label"> Liter</span></label>
         <div class="col-xs-12 col-md-4">
           <input id="choice_liters" type="number" class="form-control liter_scale" name="liter_per_day" placeholder="Liter auswählen" min="0.5" step="0.5" onkeydown="return false">
         </div>
@@ -81,18 +79,18 @@
         <tbody>
           <tr>
             <th scope="row">Selbst gesprudeltes Wasser</th>
-            <td id="result_liter_sodastream"></td>
-            <td id="result_month_sodastream"></td>
+            <td id="result_liter"></td>
+            <td id="result_month"></td>
           </tr>
           <tr>
             <th scope="row">Sprudelwasser Discounter</th>
-            <td id="result_liter_discounter"></td>
-            <td id="result_month_discounter"></td>
+            <td>13,00 Cent</td>
+            <td>3,90€</td>
           </tr>
           <tr>
             <th scope="row">Markenwasser</th>
-            <td id="result_liter_marken"></td>
-            <td id="result_month_marken"></td>
+            <td>60,00 Cent</td>
+            <td>18,00€</td>
           </tr>
         </tbody>
       </table>
