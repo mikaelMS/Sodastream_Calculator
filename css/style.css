@@ -4,15 +4,33 @@
 
 #rechner-tag {
   position: absolute;
-left: 50%;
-margin-left: -57.5px;
-margin-top: -40px;
-padding-top: 3px;
-height: 33px;
-width: 100px;
-border-radius: 22px;
-background: #cdcdcd;
-font-size: 16px
+  left: 50%;
+  margin-left: -57.5px;
+  margin-top: -40px;
+  padding-top: 3px;
+  height: 33px;
+  width: 100px;
+  border-radius: 22px;
+  background: #cdcdcd;
+  font-size: 16px
+}
+
+#title_calculator {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  display: inline-block;
+ position: relative;
+}
+
+.title-box:after {
+  content: '';
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 50%;
+    border-top: 1px solid #333;
 }
 
 #results_table tr {
@@ -29,12 +47,6 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #E76016;
   border-color: #E76016;
   width: 100%;
-}
-
-#title_calculator {
-  font-weight: 600;
-  font-size: 22px;
-  margin-bottom: 8px;
 }
 
 #wassersprudler_rechner.container {
@@ -171,29 +183,28 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
   }
 
-/*
+  /*
   ##Device = Very small Smartphones Mobiles (iPhone5 SE, etc.) (Portrait)
   ##Screen = B/w 319px to 323px
 */
-@media (min-width: 100px) and (max-width: 322px) {
-  #wassersprudler_rechner.container {
-    padding-top: 23px;
-  }
+  @media (min-width: 100px) and (max-width: 322px) {
+    #wassersprudler_rechner.container {
+      padding-top: 23px;
+    }
 
-  /* #results_table th {
+    /* #results_table th {
     padding: 6px;
   }
 
   #results_table th.table_header {
     padding: 8px;
   } */
+    #results_table {
+      font-size: 11px;
+      /* font-size: 0.71rem; */
+    }
 
-  #results_table {
-    font-size: 11px;
-    /* font-size: 0.71rem; */
+    #choice_liters, #in-liter {
+      display: none;
+    }
   }
-
-  #choice_liters, #in-liter {
-    display: none;
-  }
-}
