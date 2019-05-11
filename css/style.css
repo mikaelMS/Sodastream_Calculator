@@ -43,6 +43,17 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../vectorpaint-down.svg) 96% / 7% no-repeat #eee;
+}
+
+.form-control {
+  padding-right: 30px;
+}
+
 #btn_result {
   background-color: #E76016;
   border-color: #E76016;

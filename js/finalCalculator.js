@@ -221,10 +221,10 @@ $("#btn_result").click(function(e) {
   document.getElementById('result_liter_sodastream').innerHTML = Calculator.LiterResultSodastream + " " + "Cent";
   document.getElementById('result_month_sodastream').innerHTML = Calculator.MonthResultSodastream + "€";
 
-  document.getElementById('result_liter_discounter').innerHTML = Calculator.LiterResultDiscounter + " " + "Cent";
+  document.getElementById('result_liter_discounter').innerHTML = Calculator.LiterResultDiscounter + "€";
   document.getElementById('result_month_discounter').innerHTML = Calculator.MonthResultDiscounter + "€";
 
-  document.getElementById('result_liter_marken').innerHTML = Calculator.LiterResultMarken + " " + "Cent";
+  document.getElementById('result_liter_marken').innerHTML = Calculator.LiterResultMarken + "€";
   document.getElementById('result_month_marken').innerHTML = Calculator.MonthResultMarken + "€";
   $("#results_table tr").fadeIn("slow");
 });
