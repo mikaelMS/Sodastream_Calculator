@@ -43,6 +43,10 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
 }
 
+#choice_liters {
+  padding-right: 8px;
+}
+
 #btn_result {
   background-color: #E76016;
   border-color: #E76016;
