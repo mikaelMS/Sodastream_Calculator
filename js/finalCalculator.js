@@ -115,8 +115,8 @@ let Calculator = {
 
     let result = Calculator.WATER_PRICE + cylinderPriceLiter + equipCostLiter + sodaWriteOffMonth;
 
-    // Converting to 2 digts after comma and * 100 for cent
-    let num = Number(result * 100);
+    // Converting to 2 digts after comma and
+    let num = result;
     let roundedString = num.toFixed(2);
     let rounded_result = String(roundedString);
     Calculator.LiterResultSodastream = rounded_result.replace(".", ",");
@@ -218,7 +218,7 @@ let Calculator = {
 $("#btn_result").click(function(e) {
   e.preventDefault();
   Calculator.startProcess();
-  document.getElementById('result_liter_sodastream').innerHTML = Calculator.LiterResultSodastream + " " + "Cent";
+  document.getElementById('result_liter_sodastream').innerHTML = Calculator.LiterResultSodastream + "€";
   document.getElementById('result_month_sodastream').innerHTML = Calculator.MonthResultSodastream + "€";
 
   document.getElementById('result_liter_discounter').innerHTML = Calculator.LiterResultDiscounter + "€";
