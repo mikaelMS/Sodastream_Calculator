@@ -91,7 +91,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
 }
 
-.table_header {
+#wassersprudler_rechner .table_header {
   background-color: #8BC34A !important;
   color: #fff !important;
   border-bottom: #8BC34A !important;
@@ -101,7 +101,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 25px;
 }
 
-.question-label {
+#wassersprudler_rechner .question-label {
   font-weight: 400;
 }
 
