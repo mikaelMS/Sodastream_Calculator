@@ -7,19 +7,19 @@
   left: 50%;
   margin-left: -57.5px;
   margin-top: -40px;
-  padding-top: 3px;
-  height: 33px;
+  padding-top: 5.5px;
+  height: 38px;
   width: 100px;
   border-radius: 22px;
   background: #cdcdcd;
-  font-size: 16px
+  font-size: 18px
 }
 
 #title_calculator {
   font-weight: 600;
   font-size: 22px;
   margin-top: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   display: inline-block;
  position: relative;
 }
@@ -27,7 +27,7 @@
 .title-box:after {
   content: '';
     position: absolute;
-    top: 37px;
+    top: 36px;
     left: 0;
     width: 50%;
     border-top: 1px solid #333;
@@ -45,20 +45,50 @@ input[type=number]::-webkit-outer-spin-button {
 
 #choice_liters {
   padding-right: 8px;
+  height: 40px;
+  font-size: 16.5px;
 }
 
 #btn_result {
   background-color: #E76016;
   border-color: #E76016;
   width: 100%;
+  height: 40px;
+  box-shadow: 0 3px 10px 2px rgba(0,0,0,.25);
+  font-size: 18px;
+}
+
+.liter-bold {
+  font-weight: 700;
+}
+
+#wassersprudler_rechner label.question-label {
+  font-size: 18px;
+  padding-top: 7px;
+}
+
+#wassersprudler_rechner p {
+  margin-bottom: 0px;
+}
+
+#wassersprudler_rechner div.form-group.row {
+  margin-bottom: 20px;
+}
+
+#wassersprudler_rechner select {
+  height: 40px;
+  font-size: 16.5px;
 }
 
 #wassersprudler_rechner.container {
   font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 3px 10px 2px rgba(0,0,0,.25);
+  border: none;
+  border-radius: 5px;
 }
 
 #wassersprudler_rechner .row {
-  margin-bottom: 12px;
+  font-size: 18px;
 }
 
 .table_header {
@@ -130,6 +160,10 @@ input[type=number]::-webkit-outer-spin-button {
   #range-slider__value, #liter-label, #double-point {
     display: none;
   }
+
+  #wassersprudler_rechner div.form-group.row {
+    margin-bottom: 15px; //TODO: Responsive
+  }
 }
 
 @media (min-width: 484px) and (max-width: 762px) {
@@ -139,6 +173,10 @@ input[type=number]::-webkit-outer-spin-button {
 
   #choice_liters, #in-liter {
     display: none;
+  }
+
+  #wassersprudler_rechner div.form-group.row {
+    margin-bottom: 15px; //TODO: Responsive
   }
 }
 
@@ -158,6 +196,10 @@ input[type=number]::-webkit-outer-spin-button {
   #results_table {
     font-size: 12.0px;
     /* font-size: 0.71rem; */
+  }
+
+  #wassersprudler_rechner div.form-group.row {
+    margin-bottom: 15px; //TODO: Responsive
   }
 }
 
@@ -187,6 +229,10 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
   }
 
+  #wassersprudler_rechner div.form-group.row {
+    margin-bottom: 15px; //TODO: Responsive
+  }
+
   /*
   ##Device = Very small Smartphones Mobiles (iPhone5 SE, etc.) (Portrait)
   ##Screen = B/w 319px to 323px
@@ -210,5 +256,9 @@ input[type=number]::-webkit-outer-spin-button {
 
     #choice_liters, #in-liter {
       display: none;
+    }
+
+    #wassersprudler_rechner div.form-group.row {
+      margin-bottom: 15px; //TODO: Responsive
     }
   }
