@@ -1,5 +1,9 @@
-.hide {
+#wassersprudler_rechner .hide {
   display: none;
+}
+
+#wassersprudler_rechner {
+  margin-top: 40px;
 }
 
 #rechner-tag {
@@ -38,8 +42,8 @@
 }
 
 /* Needed for constant display of Liter spinners */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+#wassersprudler_rechner input[type=number]::-webkit-inner-spin-button,
+#wassersprudler_rechner input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
 }
 
@@ -47,6 +51,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-right: 8px;
   height: 40px;
   font-size: 16.5px;
+  border-radius: 4px;
 }
 
 #btn_result {
@@ -78,6 +83,7 @@ input[type=number]::-webkit-outer-spin-button {
 #wassersprudler_rechner select {
   height: 40px;
   font-size: 16.5px;
+  border-radius: 4px;
 }
 
 #wassersprudler_rechner.container {
@@ -162,7 +168,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   #wassersprudler_rechner div.form-group.row {
-    margin-bottom: 15px; //TODO: Responsive
+    margin-bottom: 15px;
   }
 }
 
@@ -176,7 +182,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   #wassersprudler_rechner div.form-group.row {
-    margin-bottom: 15px; //TODO: Responsive
+    margin-bottom: 15px;
   }
 }
 
@@ -199,7 +205,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   #wassersprudler_rechner div.form-group.row {
-    margin-bottom: 15px; //TODO: Responsive
+    margin-bottom: 15px;
   }
 }
 
@@ -230,7 +236,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   #wassersprudler_rechner div.form-group.row {
-    margin-bottom: 15px; //TODO: Responsive
+    margin-bottom: 15px;
   }
 
   /*
@@ -259,6 +265,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     #wassersprudler_rechner div.form-group.row {
-      margin-bottom: 15px; //TODO: Responsive
+      margin-bottom: 15px;
     }
   }

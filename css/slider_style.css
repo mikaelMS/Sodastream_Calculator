@@ -1,12 +1,14 @@
-input[type=range] {
+#wassersprudler_rechner input[type=range] {
   -webkit-appearance: none;
   width: 100%;
   margin: 7.05px 0;
 }
-input[type=range]:focus {
+
+#wassersprudler_rechner input[type=range]:focus {
   outline: none;
 }
-input[type=range]::-webkit-slider-runnable-track {
+
+#wassersprudler_rechner input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 5.9px;
   cursor: pointer;
@@ -15,7 +17,8 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 5.5px;
   border: 0px solid #e3ddd8;
 }
-input[type=range]::-webkit-slider-thumb {
+
+#wassersprudler_rechner input[type=range]::-webkit-slider-thumb {
   box-shadow: 0.3px 0.3px 3.5px #000000, 0px 0px 0.3px #F8F8F8;
   border: 1px solid #8bc34a;
   height: 20px;
@@ -26,10 +29,12 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -7.05px;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
+
+#wassersprudler_rechner input[type=range]:focus::-webkit-slider-runnable-track {
   background: #ece7e4;
 }
-input[type=range]::-moz-range-track {
+
+#wassersprudler_rechner input[type=range]::-moz-range-track {
   width: 100%;
   height: 5.9px;
   cursor: pointer;
@@ -38,7 +43,8 @@ input[type=range]::-moz-range-track {
   border-radius: 5.5px;
   border: 0px solid #e3ddd8;
 }
-input[type=range]::-moz-range-thumb {
+
+#wassersprudler_rechner input[type=range]::-moz-range-thumb {
   box-shadow: 0.3px 0.3px 3.5px #000000, 0px 0px 0.3px #0d0d0d;
   border: 1px solid #8bc34a;
   height: 20px;
@@ -47,7 +53,8 @@ input[type=range]::-moz-range-thumb {
   background: #8bc34a;
   cursor: pointer;
 }
-input[type=range]::-ms-track {
+
+#wassersprudler_rechner input[type=range]::-ms-track {
   width: 100%;
   height: 5.9px;
   cursor: pointer;
@@ -55,19 +62,22 @@ input[type=range]::-ms-track {
   border-color: transparent;
   color: transparent;
 }
-input[type=range]::-ms-fill-lower {
+
+#wassersprudler_rechner input[type=range]::-ms-fill-lower {
   background: #dad3cc;
   border: 0px solid #e3ddd8;
   border-radius: 11px;
   box-shadow: 0.3px 0.3px 0.9px rgba(0, 0, 0, 0.08), 0px 0px 0.3px rgba(13, 13, 13, 0.08);
 }
-input[type=range]::-ms-fill-upper {
+
+#wassersprudler_rechner input[type=range]::-ms-fill-upper {
   background: #e3ddd8;
   border: 0px solid #e3ddd8;
   border-radius: 11px;
   box-shadow: 0.3px 0.3px 0.9px rgba(0, 0, 0, 0.08), 0px 0px 0.3px rgba(13, 13, 13, 0.08);
 }
-input[type=range]::-ms-thumb {
+
+#wassersprudler_rechner input[type=range]::-ms-thumb {
   box-shadow: 0.3px 0.3px 3.5px #000000, 0px 0px 0.3px #0d0d0d;
   border: 1px solid #8bc34a;
   height: 20px;
@@ -77,9 +87,11 @@ input[type=range]::-ms-thumb {
   cursor: pointer;
   height: 5.9px;
 }
-input[type=range]:focus::-ms-fill-lower {
+
+#wassersprudler_rechner input[type=range]:focus::-ms-fill-lower {
   background: #e3ddd8;
 }
-input[type=range]:focus::-ms-fill-upper {
+
+#wassersprudler_rechner input[type=range]:focus::-ms-fill-upper {
   background: #ece7e4;
 }
